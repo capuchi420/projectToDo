@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Raleway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+p.done{
+    text-decoration: line-through;
+}
+
+button{
+    cursor: pointer;
+}
+
+hr{
+    margin-top: .3rem;
+}
+
+nav{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Borel', cursive;
+    background-color: #e00;
+    color: #fff;
+}
+
+div.content{
+    width: 90vw;
+    max-height: 90vh;
+    margin: 20% auto 300px auto;
+}
+
+div.content form{
+    background-color: #eadeb5;
+}
+
+div.content form input{
+    width: 75%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: inherit;
+}
+
+div.content form input:focus{
+    outline: none;
+}
+
+div.content form button{
+    padding: 1rem;
+    border: none;
+    background-color: #e3d29a;
+    color: #fff;
+    float: right;
+}
+
+div.content div.tasks{
+    margin-top: 2rem;
+}
+
+div.content div.tasks div.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+div.content div.tasks div.task div.options button{
+    padding: .5rem 1rem;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+div.content div.tasks div.task div.options button.done:hover{
+    background-color: #03b24e;
+    color: #fff;
+}
+
+div.content div.tasks div.task div.options button.del:hover{
+    background-color: #e00;
+    color: #fff;
+}
